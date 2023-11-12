@@ -16,8 +16,8 @@ namespace ImageBlurring.ImageBlur.Impl
             var gValuesList = new List<byte>();
             var bValuesList = new List<byte>();
 
-            for (var y = 0; y < height; y++)
             for (var x = 0; x < width; x++)
+            for (var y = 0; y < height; y++)
             {
                 rValuesList.Clear();
                 gValuesList.Clear();

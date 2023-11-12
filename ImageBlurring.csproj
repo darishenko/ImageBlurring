@@ -22,19 +22,19 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="Test\base_87716f252d.jpg" />
-      <None Remove="Test\photo_2023-11-08_20-47-42.jpg" />
+        <None Remove="Test\base_87716f252d.jpg"/>
+        <None Remove="Test\photo_2023-11-08_20-47-42.jpg"/>
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Test" />
+        <Folder Include="Test"/>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
     </ItemGroup>
 
 </Project>
