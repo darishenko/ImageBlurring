@@ -8,7 +8,6 @@ namespace ImageBlurring.ImageBlur.Impl
         public Bitmap Blur(Bitmap sourceBitmap, int radius)
         {
             var sigma = Math.Max((double) radius / 2, 1);
-            //var sigma = (radius + 0.5) / Math.PI;
             var width = sourceBitmap.Width;
             var height = sourceBitmap.Height;
 

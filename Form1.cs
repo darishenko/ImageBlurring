@@ -24,7 +24,7 @@ namespace ImageBlurring
 
             var bitmap = new Bitmap(filename);
             pictureBox_source.Image = bitmap;
-            IImageBlur imageBlur = new GaussianBlur();
+            IImageBlur imageBlur = new MedianFilter();
             var blurredImage = imageBlur.Blur(bitmap, 5);
             pictureBox_result.Image = blurredImage;
         }
