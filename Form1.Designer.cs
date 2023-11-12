@@ -50,7 +50,7 @@ namespace ImageBlurring
             // 
             this.pictureBox_result.Location = new System.Drawing.Point(745, 12);
             this.pictureBox_result.Name = "pictureBox_result";
-            this.pictureBox_result.Size = new System.Drawing.Size(799, 700);
+            this.pictureBox_result.Size = new System.Drawing.Size(700, 700);
             this.pictureBox_result.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_result.TabIndex = 1;
             this.pictureBox_result.TabStop = false;
