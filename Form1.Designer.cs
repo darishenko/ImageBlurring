@@ -33,6 +33,9 @@ namespace ImageBlurring
             this.pictureBox_result = new System.Windows.Forms.PictureBox();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.button_open_image = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_source)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_result)).BeginInit();
             this.SuspendLayout();
@@ -72,11 +75,41 @@ namespace ImageBlurring
             this.button_open_image.UseVisualStyleBackColor = true;
             this.button_open_image.Click += new System.EventHandler(this.button_open_image_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "BoxBlur",
+            "GaussianBlur",
+            "MedianFilter",
+            "SobelOperator"});
+            this.comboBox1.Location = new System.Drawing.Point(296, 733);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(182, 33);
+            this.comboBox1.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(599, 736);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(150, 31);
+            this.textBox1.TabIndex = 4;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(663, 810);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(150, 31);
+            this.textBox3.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1553, 879);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button_open_image);
             this.Controls.Add(this.pictureBox_result);
             this.Controls.Add(this.pictureBox_source);
@@ -85,6 +118,7 @@ namespace ImageBlurring
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_source)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_result)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -94,6 +128,9 @@ namespace ImageBlurring
         private System.Windows.Forms.PictureBox pictureBox_result;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.Button button_open_image;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
 
