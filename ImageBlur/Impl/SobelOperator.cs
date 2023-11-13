@@ -5,10 +5,6 @@ namespace ImageBlurring.ImageBlur.Impl
 {
     public class SobelOperator : IImageBlur
     {
-        private const double RWeight = 0.3;
-        private const double GWeight = 0.59;
-        private const double BWeight = 0.11;
-
         private static readonly int[,] RowMask =
         {
             {-1, 0, 1},
@@ -60,9 +56,9 @@ namespace ImageBlurring.ImageBlur.Impl
                 rgbMagnitude[i] = (int) Math.Sqrt(Math.Pow(rgbX[i], 2) + Math.Pow(rgbY[i], 2));
 
             return Color.FromArgb(
-                (byte) Math.Min(255, rgbMagnitude[0] * RWeight),
-                (byte) Math.Min(255, rgbMagnitude[1] * GWeight),
-                (byte) Math.Min(255, rgbMagnitude[2] * BWeight)
+                (byte) Math.Min(255, rgbMagnitude[0]),
+                (byte) Math.Min(255, rgbMagnitude[1]),
+                (byte) Math.Min(255, rgbMagnitude[2])
             );
         }
 
@@ -70,8 +66,8 @@ namespace ImageBlurring.ImageBlur.Impl
         {
             return new int[]
             {
-                color.G,
                 color.R,
+                color.G,
                 color.B
             };
         }
